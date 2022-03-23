@@ -1,0 +1,293 @@
+:root {
+    /* COLOR PALETTE */
+    --darkblue: #004890;
+    --lightblue: #91BEE8;
+    --blue: #3F91E8;
+    --light: #f2e6d8;
+    --dark: #444557;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav {
+    background: var(--dark);
+    width: 100vw;
+    min-height: 6rem;
+    padding: 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+ul {
+    list-style: none;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav-list:last-child {
+    margin-right: 80px;
+}
+
+.nav-item {
+    margin: 5px;
+    padding: 5px;
+    border-bottom: 4px solid var(--lightblue);
+    color: var(--lightblue);
+    font-weight: 600;
+
+}
+
+li a {
+    text-decoration: none;
+    color: inherit;
+    transition: scale .3s;
+}
+
+.foc a {
+    color: inherit;
+}
+
+li a:visited, a:hover, a:active {
+    color: inherit;
+}
+
+li:hover {
+    opacity: 0.65;
+    cursor: pointer;
+    transform: scale(1.05, 1.05);
+}
+
+.title {
+    background: var(--lightblue);
+    color: var(--dark);
+    padding:  0rem 1rem 0rem 6rem;
+    font-size: 4em;
+}
+
+.hero {
+    background: rgba(201, 169, 129, 0.4);
+    background-image: url('./images/crater-lake.jpg');
+    background-blend-mode: multiply;
+    background-position: 50% 75%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 50vh;
+    position: relative;
+    min-height: 100px;
+}
+
+h3 {
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    
+
+    text-align: center;
+    font-size: 1.5em;
+    font-style: italic;
+    color: white;
+    opacity: 0.4;
+}
+
+
+
+/*///////// MAIN SECTION ////////////*/
+
+.main-container {
+    padding: 2rem 4rem;
+    background-color: var(--light);
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 2em 0;
+    margin: 2em 0;
+}
+
+h2 {
+    color: var(--darkblue);
+    min-height: 200px;
+    width: 350px;
+    text-align: right;
+    border-right: 3px solid var(--darkblue);
+    padding: 0 2rem;
+    margin-right: 2rem;
+    font-size: 3.8vw;
+    flex-basis: 25%;
+}
+
+.section-content, .project-container {
+    flex-basis: 70%;
+}
+
+p {
+    margin-bottom: 2rem;
+    color: var(--darkblue);
+}
+
+.project-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.project-container a {
+    display: block;
+}
+.project {
+    box-sizing: border-box;
+    margin: 1rem;
+    min-height: 12rem;
+    width: calc(50% - 2rem);
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(49, 181, 240, .4);
+    background-blend-mode: multiply;
+    border: 0.5rem solid var(--lightblue);
+    transition: background-color 1s;
+}
+
+.project:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0);
+    background-blend-mode: none;
+}
+
+
+#main-project {
+    width: 100%;
+    min-height: 24rem;
+}
+
+.p2,
+.p3,
+.p4,
+.p5 {
+    background-image: url("./images/a3Q5VW5_460s.jpg");
+    background-size: cover;
+}
+
+.project-title {
+    padding: 1rem;
+    background: var(--lightblue);
+    position: absolute;
+    left: 0;
+    bottom: 20px;
+    color: var(--darkblue)
+}
+
+.p1 {
+    background-image: url("./images/semantichtml.PNG");
+    background-position: center;
+}
+
+
+/*//////// CONTACT LIST ///////////*/
+
+.contact-list {
+    min-height: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.foc {
+    color: var(--darkblue);
+    padding-bottom: 0.5rem;
+    border-bottom: 0.3rem solid var(--darkblue);
+}
+
+
+/*//////////// RESPONSIVE QUERIES ///////////////*/
+
+@media screen and (max-width: 1200px) {
+    nav {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        height: none;
+        min-height: 100px;
+    }
+
+    .title {
+        padding: 0rem 1rem;
+        text-align: center;
+    }
+
+    .nav-list:last-child {
+        margin-right: 0px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .main-container {
+        padding: 1rem 2rem;
+    }
+
+    nav {
+        padding: 0 0 0.3rem 0;
+    }
+
+    .nav-list {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav-item {
+        font-size: 2.5vw;
+    }
+
+    .title {
+        width: 100%;
+    }
+
+    .container {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    h2 {
+        min-height: 0px;
+        width: 100%;
+        text-align: center;
+        border-right: none;
+        border-bottom: 3px solid var(--darkblue);
+        padding: 0 0 0.7rem 0;
+        margin: 0 0 1.3rem 0;
+        font-size: 5vw;
+    }
+
+    .project-container {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .project {
+        width: 100%;
+    }
+
+    #main-project {
+        min-height: 12rem;
+    }
+
+    .project:last-child {
+        margin-bottom: 3rem;
+    }
+
+    .contact-list {
+        flex-direction: column;
+    }
+}
