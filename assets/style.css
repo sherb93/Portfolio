@@ -168,11 +168,10 @@ p {
 
 
 #main-project {
-    width: 100%;
+    width: calc(100% - 2rem);
     min-height: 24rem;
 }
 
-.p2,
 .p3,
 .p4,
 .p5 {
@@ -192,6 +191,11 @@ p {
 .p1 {
     background-image: url("./images/semantichtml.PNG");
     background-position: center;
+}
+
+.p2 {
+    background-image: url("./images/beerbuddy.PNG");
+    background-size: cover;
 }
 
 
