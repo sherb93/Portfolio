@@ -172,7 +172,6 @@ p {
     min-height: 24rem;
 }
 
-.p3,
 .p4,
 .p5 {
     background-image: url("./images/a3Q5VW5_460s.jpg");
@@ -198,6 +197,10 @@ p {
     background-size: cover;
 }
 
+.p3 {
+    background-image: url("./images/weather.PNG");
+    background-size: cover;
+}
 
 /*//////// CONTACT LIST ///////////*/
 
