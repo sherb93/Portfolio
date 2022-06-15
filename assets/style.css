@@ -172,7 +172,6 @@ p {
     min-height: 24rem;
 }
 
-.p4,
 .p5 {
     background-image: url("./images/a3Q5VW5_460s.jpg");
     background-size: cover;
@@ -188,8 +187,8 @@ p {
 }
 
 .p1 {
-    background-image: url("./images/semantichtml.PNG");
-    background-position: center;
+    background-image: url("./images/quiz.png");
+    background-position: cover;
 }
 
 .p2 {
@@ -199,6 +198,16 @@ p {
 
 .p3 {
     background-image: url("./images/weather.PNG");
+    background-size: cover;
+}
+
+.p4 {
+    background-image: url("./images/socialnetwork.PNG");
+    background-size: cover;
+}
+
+.p5 {
+    background-image: url("./images/cms.PNG");
     background-size: cover;
 }
 
